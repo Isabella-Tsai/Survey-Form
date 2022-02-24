@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">International Cuisine Survey Form</h1>
+    <p id="description">Survey about international cuisine</p>
+    <form id="survey-form">
+        <label for="name" id="name-label"> Name</label> <br>
+		<input type="text" name="name" id="name" required placeholder="Full Name"> <br>
+
+		<label for="email" id="email-label"> Email </label> <br>
+		<input type="email" name="email" id="email" required placeholder="valid email address">
+		<label for="number" id="number-label"> Age </label>
+		<input type="number" name="age" id="number" min="10" max="120" placeholder="Age"> <br>
+
+		<label for="dropdown"> Sex </label>
+		<select id="dropdown" name="sex">
+			<option value="male"> Male</option>
+			<option value="female"> Female</option>
+			<option value="other"> other </option>
+		</select> <br> <br>
+
+        <label id="rbutton">How often you eat international food? </label> <br>
+		<input type="radio" name="frequency" id="fre1" value="often">
+		<label for="fre1"> once a week </label> <br>
+		<input type="radio" name="frequency" id="fre2" value="regular">
+		<label for="fre2"> twice - three times per month </label> <br>
+		<input type="radio" name="frequency" id="fre3" value="sometimes">
+		<label for="fre3"> once a month </label> <br>
+		<input type="radio" name="frequency" id="fre4" value="seldom">
+		<label for="fre4"> only when there is an international festival </label> <br> <br>
+
+		<label id="cbox">Which is your favourite international food: </label> <br>
+		<input type="checkbox" name="region" value="easia" id="easia">
+		<label>East Asia (China, Jepang, Korea, Taiwan, etc )</label> <br>
+		<input type="checkbox" name="region" value="sasia" id="sasia">
+		<label>South Asia (India, Thailand, Vietnam, Indonesia, Malaysia, etc)</label><br>
+		<input type="checkbox" name="region" value="mideast" id="mideast">
+		<label>Middle East (Saudi Arabia, Yemen , Egypt, etc)</label><br>
+		<input type="checkbox" name="region" value="seurope" id="seurope">
+		<label>Southern Europe (Italy, Spain, Greece etc)</label><br>
+		<input type="checkbox" name="region" value="weurope" id="weurope">
+		<label>Western Europe (French, German, Netherlands, etc)</label><br>
+		<input type="checkbox" name="region" value="namerica" id="namerica">
+		<label>North America (USA, Mexico, Canada etc)</label><br>
+		<input type="checkbox" name="region" value="samerica" id="samerica">
+		<label>South America (Brazil, Argentina, Colombia etc)</label><br>
+		<input type="checkbox" name="region" value="vegan" id="vegan">
+		<label>As long as it is a vegan food</label><br> <br>
+
+		<label for="opinion" id="opinion-label"> Please share your opinion</label><br>
+		<textarea id="opinion" placeholder="we apreciate your opinion"></textarea>
+
+
+
+		<input id="submit" type="submit" name="submit" value="submit">
+
+
+
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
